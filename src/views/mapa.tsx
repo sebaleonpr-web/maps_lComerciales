@@ -19,7 +19,7 @@ export default function MapScreen() {
   };
 
   useEffect(() =>{
-    marcador();
+    referencias();
 
   },
   []);
@@ -44,7 +44,7 @@ return (
 
 
 //////////////////////////////////////////////////////////////////
-function marcador(){
+function referencias(){
   const map_reference = React.useRef<MapView>(null);
   if (!map_reference.current || locales.length === 0) return; 
   const marcadores = locales.map (l => ({latitude: l.lat, longitude: l.lng }));
