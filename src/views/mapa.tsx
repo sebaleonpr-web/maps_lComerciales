@@ -39,6 +39,11 @@ return (
   </View>
 );
 }
+
+
+
+
+//////////////////////////////////////////////////////////////////
 function marcador(){
   const map_reference = React.useRef<MapView>(null);
   if (!map_reference.current || locales.length === 0) return; 
@@ -47,5 +52,4 @@ function marcador(){
     edgePadding: { top: 60, right: 60, bottom: 60, left: 60 },
     animated: true,
   });
-  
 }
