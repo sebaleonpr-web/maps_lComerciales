@@ -1,17 +1,24 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import React, { useCallback, useEffect, useMemo } from "react";
+import { Dimensions, FlatList, Image, Modal, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import MapView, { Marker } from "react-native-maps";
+import locales from "../../assets/data/locales.json";
 
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
+export default function mapScreen() {
 
-export default function HomeScreen() {
+  const map_reference = React.useRef<MapView>(null)
+
+
+
+
+
+
+
+
+  
   return (
-   
-
     
+
+
   );
 }
 
