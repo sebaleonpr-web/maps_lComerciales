@@ -4,7 +4,6 @@ import React from 'react';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { HapticTab } from "../../components/haptic-tab";
-import { IconSymbol } from "../../components/ui/icon-symbol";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -20,7 +19,9 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarShowLabel: false,
+          tabBarIcon: () => null,
+          tabBarStyle: { display: 'none' },
         }}
       />
     </Tabs>
