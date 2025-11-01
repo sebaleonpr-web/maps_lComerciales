@@ -33,7 +33,7 @@ function referencias(){
   if (!map_reference.current || locales.length === 0) return; 
   const marcadores = locales.map (l => ({latitude: l.lat, longitude: l.lng }));
   map_reference.current.fitToCoordinates(marcadores, {
-    edgePadding: { top: 70, right: 70, bottom: 70, left: 70 },
+    edgePadding: { top: 70, right: 80, bottom: 70, left: 80 },
     animated: true,
   });
 }
